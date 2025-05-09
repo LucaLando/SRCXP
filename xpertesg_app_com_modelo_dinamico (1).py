@@ -1,7 +1,6 @@
 import numpy as np
 import streamlit as st
 import pandas as pd
-import plotly.express as px
 import openai
 import os
 import json
@@ -170,6 +169,7 @@ if st.session_state.usuario:
                     st.info("Simulação de rentabilidade não disponível para este fundo.")
 
     elif aba == "📈 Dashboards":
+        import plotly.express as px
         st.subheader("📊 Análise ESG da Base de Clientes")
     
         col1, _ = st.columns(2)
