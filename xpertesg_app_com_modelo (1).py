@@ -6,6 +6,13 @@ import openai
 import os
 import json
 
+@st.cache_data
+def gerar_base_clientes():
+    from gerar_base_grande import gerar_base
+    df = gerar_base()
+    return df
+
+
 st.set_page_config(page_title="XPertESG", layout="wide")
 COR_XP = "#FECB00"
 
