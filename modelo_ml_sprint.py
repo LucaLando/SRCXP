@@ -74,7 +74,7 @@ df3.head(10)
 
 df3.to_csv("base_clientes_xpertesg.csv", index=False)
 
-!pip install xgboost --quiet
+pip install xgboost --quiet
 
 import numpy as np
 import pandas as pd
