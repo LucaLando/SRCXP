@@ -74,8 +74,6 @@ df3.head(10)
 
 df3.to_csv("base_clientes_xpertesg.csv", index=False)
 
-pip install xgboost --quiet
-
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
